@@ -19,7 +19,8 @@ sudo add-apt-repository \
    stable"
 
 sudo apt-get update
-
+sudo su
+apt install network-manager
 sudo apt-get install -y docker-ce
 
 curl -sL https://raw.githubusercontent.com/home-assistant/hassio-installer/master/hassio_install.sh | bash -s
