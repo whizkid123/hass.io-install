@@ -4,7 +4,7 @@
 export IP="$(hostname -I | sed -e 's/[[:space:]]*$//')"
 
 echo -e "####################\nYour IP address is: \n# $IP\n####################"
-
+sudo apt install ssh
 sudo apt-get update
 
 sudo apt-get install -y socat jq avahi-daemon apt-transport-https ca-certificates software-properties-common
